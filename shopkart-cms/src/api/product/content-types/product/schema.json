@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "shop_karts",
+  "collectionName": "products",
   "info": {
-    "singularName": "shop-kart",
-    "pluralName": "shop-karts",
-    "displayName": "shop-kart"
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
   },
   "options": {
     "draftAndPublish": true
@@ -38,6 +38,12 @@
     },
     "is_active": {
       "type": "boolean"
+    },
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item",
+      "mappedBy": "product"
     }
   }
 }

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * shop-kart controller
+ * order-item controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::shop-kart.shop-kart');
+module.exports = createCoreController('api::order-item.order-item');
